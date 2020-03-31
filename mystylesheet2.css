@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+
+ .mynavbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: deeppink; 
+}
+
+.mynavbar li {
+    float: left;
+}
+
+li a {
+    display:block;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    text-decoration:none;
+}
+
+
+
+li a:hover {
+    text-decoration:none;
+    background-color: hotpink; 
+}
+
+.active {
+    background-color: rgb(255, 140, 198); 
+
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', 'Arial';
+    font-weight: 100;
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    font-size: 5em;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: dodgerblue;
+}
+
+h2 {
+    font-size: 3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.purpose {
+    background-color: darkorchid;
+    padding-bottom: 30px;
+}
+
+.description {
+    background-color: limegreen;
+    padding-bottom: 30px;
+}
+
+.history {
+    background-color: orangered;
+    padding-bottom: 100px;
+}
+
+.purpose p, .description p, .history table{
+    width:50%;
+    margin: auto;
+}
+
+#stylelist {
+    list-style-type: none;
+    overflow: hidden;
+    width:80%;
+    margin:auto;
+}
+
+#stylelist li {
+    width:30%;
+    margin-left:1.66%;
+    margin-right:1.66%;
+    float:left;
+    color:white;
+    background-color:rgb(159, 206, 159);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#stylelist li:hover {
+    background-color: rgb(44, 161, 44);
+}
+
+p, td, cite a {
+    font-family: 'Roboto', 'Arial';
+    font-weight: 400;
+    color:white;
+}
+
+th {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', 'Arial';
+    font-weight: 700;
+    color: white;
+}
+
+
+p {
+    text-align: center;
+}

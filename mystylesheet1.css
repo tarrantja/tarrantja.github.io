@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+body {
+    background-color: gray;
+}
+
+ .mynavbar {
+    width:20%;
+    float:left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray; 
+}
+
+h1, .purpose, .description, .history {
+    width:80%;
+    float:right;
+}
+
+li a {
+    display:block;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    text-decoration:none;
+}
+
+
+
+li a:hover {
+    text-decoration:none;
+    background-color: lightgray; 
+}
+
+.active {
+    background-color: black; 
+
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3 {
+    text-align: left;
+    font-family: 'Arvo', 'Arial';    ;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    float: right;
+    font-size: 4em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+h2 {
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.purpose, .description, .history {
+    background-color: white;
+    padding-bottom: 0;
+}
+
+.purpose p, .description p, .history table{
+    width:80%;
+    margin: auto;
+}
+
+#stylelist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:80%;
+    margin:auto;
+}
+
+#stylelist li {
+    width: 30%;
+    float:left;
+    color:black;
+    border: black solid 2px;
+    background-color:white;
+    margin-left:1.66%;
+    margin-right:1.66%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius:10px;
+}
+
+#stylelist li:hover {
+    background-color: gray;
+    color:white;
+}
+
+p, td, cite a, li {
+    font-family: 'Arvo', 'Arial';
+    font-weight: 400;
+    color:black;
+}
+
+th {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Arvo', 'Arial';
+    font-weight: 700;
+    color: black;
+}
+
+
+p, td {
+    text-align: justify;
+}

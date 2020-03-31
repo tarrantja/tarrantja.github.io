@@ -9,21 +9,15 @@
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <!--Bootstrap jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!--Bootstrap Javascript-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <!--My Custom StyleSheet-->
-    <link rel="stylesheet" href="mystylesheet.css">
+    <link rel="stylesheet" href="mystylesheet1.css">
 
     <script>
 
-        function hightlightBody(){
-            var x = document.getElementsByTagName("body");
+        function hightlightList(){
+            var x = document.getElementsByTagName("ul");
             for (i = 0; i < x.length; i++){
-                x[i].style.backgroundColor = "yellow";
+                x[i].style.border = "5px solid yellow";
             }
         }
 
@@ -52,15 +46,19 @@
             }
         }
         function highlightNone(){
-            var x = document.querySelectorAll("h1, h2, p, table, body");
+            var x = document.querySelectorAll("h1, h2, p, table");
             for (i = 0; i < x.length; i++){
-                x[i].style.backgroundColor = "transparent";
+                x[i].style.backgroundColor = "white";
+            }
+            var x = document.getElementsByTagName("ul");
+            for (i = 0; i < x.length; i++){
+                x[i].style.border = "none";
             }
         }
     </script>
 
     <style>
-        #h1:hover, #h2:hover, #p:hover, #body:hover, #table:hover {
+        #h1:hover, #h2:hover, #p:hover, #table:hover, #list:hover {
             background-color: yellow;
         }
     </style>
@@ -70,44 +68,37 @@
 <body>
 
     <!--Navigation Bar-->
-    <nav class="navbar navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="html_info.html">HTML</a></li>
-                    <li><a href="css_info.html">CSS</a></li>
-                    <li><a href="javascript_info.html">JavaScript</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--First Container-->
-    <div class="container">
+    <ul class="mynavbar">
+        <li class="active"><a href="html_info.html">HTML</a></li>
+        <li><a href="css_info.html">CSS</a></li>
+        <li><a href="javascript_info.html">JavaScript</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div>
         <h1>Hypertext Markup Language (HTML)</h1>
+    </div>
+        <div class="purpose">
         <h2>Purpose</h2>
         <p>HTML is the core mark-up language of the World Wide Web. It's purpose is to describe the structure of the text-based content of a website <cite><a href="https://www.w3schools.com/html/html_intro.asp" target=_blank>(W3Schools, 2020)</a></cite>.</p>
         
+    </div>
+    <div class="description">
         <h2>Description</h2>
         
 
         <p>Content to be displayed is arranged into a series of elements, represented by tags. These tags are labelled pieces of content, such as headings, paragraphs and tables. Hover over each of the lines of HTML below to reveal where these elements exist on this page.</p>
 
         <pre>
-            <span onmouseover=hightlightBody() onmouseout=highlightNone() id="body">&ltbody&gt  &lt!--This opens the entire body of the page--></span>
+            <span>&ltbody&gt  &lt!--This opens the entire body of the page--></span>
+                <span onmouseover=hightlightList() onmouseout=highlightNone() id="list">&ltul&gt...&lt/ul&gt &lt!--Unordered List--></span>
                 <span onmouseover=highlightHeader1() onmouseout=highlightNone() id="h1">&lth1&gtThis is a Heading 1&lt/h1&gt</span>
                 <span onmouseover=highlightHeader2() onmouseout=highlightNone() id="h2">&lth2&gtThis is a Heading 2&lt/h2&gt</span>
                 <span onmouseover=highlightPara() onmouseout=highlightNone() id="p">&ltp&gtThis is a paragraph&lt/p&gt</span>
                 <span onmouseover=highlightTable() onmouseout=highlightNone() id="table">&lttable&gt...&lt/table&gt</span>
-            <span onmouseover=hightlightBody() onmouseout=highlightNone() id="body">&lt/body&gt</span></pre>
-
+            <span>&lt/body&gt</span></pre>
+        </div>
+        <div class="history">
         <h2>History</h2>
         <table class="table">
             <tr>

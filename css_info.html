@@ -7,21 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <!--Bootstrap jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!--Bootstrap Javascript-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link id="bootStrap" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <!--My Custom StyleSheet-->
-    <link rel="stylesheet" href="mystylesheet.css">
+    <link id="style" rel="stylesheet" href="mystylesheet1.css">
 
     <script>
-        function timesNewRoman() {
-            var x = document.getElementsByTagName("p");
-            x.style.fontFamily = "arial";
+        function changeToStyle1() {
+            document.getElementById("style").href = "mystylesheet1.css";
+            document.getElementById("bootStrap").href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css";
+        }
+
+        function changeToStyle2() {
+            document.getElementById("style").href = "mystylesheet2.css";
+            document.getElementById("bootStrap").href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css";
+        }
+
+        function noCSS() {
+            document.getElementById("style").href = "";
+            document.getElementById("bootStrap").href = "";
         }
     </script>
 
@@ -30,44 +34,46 @@
 <body>
 
     <!--Navigation Bar-->
-    <nav class="navbar navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="html_info.html">HTML</a></li>
-                    <li class="active"><a href="css_info.html">CSS</a></li>
-                    <li><a href="javascript_info.html">JavaScript</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <ul class="mynavbar">
+        <li><a href="html_info.html">HTML</a></li>
+        <li class="active"><a href="css_info.html">CSS</a></li>
+        <li><a href="javascript_info.html">JavaScript</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
     <!--First Container-->
-    <div class="container">
+    <div>
         <h1>Cascading Style Sheets (CSS)</h1>
+    </div>
+
+    <div class="purpose">
         <h2>Purpose</h2>
         <p>CSS is a method for managing a sites overall style through a separate stylesheet. CSS allows styling to be
             separated from content (written in HTML) and applied consistently across the whole website. The term
             cascading comes from the ability to combine multiple CSS files to determine the style for one page. This
             means that styles can inherit and overwrite previously declared styles <cite><a
                     href="https://thehistoryoftheweb.com/look-back-history-css/">(Hoffman, 2017)</a></cite>.</p>
+    </div>
 
+    <div class="description">
         <h2>Description</h2>
-        <p>A CSS rule set is descripbed in two parts. First, the selector such as an element (paragraph, headings), class or id. Second, a series of declarations that assign values to style properties such as text colours, background colour, font, margins.</p>
+        <p>A CSS rule set is descripbed in two parts. First, the selector such as an element (paragraph, headings),
+            class or
+            id. Second, a series of declarations that assign values to style properties such as text colours, background
+            colour, font, margins.</p>
+            <br>
         <p>For example, we can change the font of all elements:</p>
 
-        <div class="btn-group btn-group-justified">
-            <span class="btn btn-default" onclick=timesNewRoman()>Times New Roman</span>
-            <span class="btn btn-default" onclick=arial()>Heading 2</span>
-            <span class="btn btn-default" onclick=roboto()>Paragraph</span>
-        </div>
+        <br>
+
+        <ul id="stylelist">
+            <li onclick=changeToStyle1()>Style 1</li>
+            <li onclick=changeToStyle2()>Style 2</li>
+            <li onclick=noCSS()>No Style</li>
+        </ul>
+
+    </div>
+
+    <div class="history">
 
         <h2>History</h2>
         <table class="table">
@@ -79,7 +85,7 @@
                 <td>1994</td>
                 <td>As the Web starts to be used as a publishing platform, CERN employee Hakon Wium Lie identifies the
                     need
-                    to style pages. This functionality  was not provided by HTML at the time. Hakon publishes the first
+                    to style pages. This functionality was not provided by HTML at the time. Hakon publishes the first
                     draft of the Cascading HTML Style Sheets proposal <cite><a
                             href="https://www.w3.org/Style/CSS20/history.html">(Bos, 2016)</a></cite>, providing a
                     useful
@@ -91,17 +97,29 @@
 
             <tr>
                 <td>1995</td>
-                <td>the www-style mailing list is created. This would greatly shape the direction of CSS <cite><a href="https://www.css-class.com/a-brief-history-of-css/">(CSS Class, 2016)</a></cite>. Debate over the adoption of CSS focussed on the novel idea of balancing author and user requirements, as well as its simplicity <cite><a
-                    href="https://www.w3.org/Style/CSS20/history.html">(Bos, 2016)</a></cite>. Some argued that a full programming language was required to style sheets.</td>
+                <td>the www-style mailing list is created. This would greatly shape the direction of CSS <cite><a
+                            href="https://www.css-class.com/a-brief-history-of-css/">(CSS Class, 2016)</a></cite>.
+                    Debate
+                    over the adoption of CSS focussed on the novel idea of balancing author and user requirements, as
+                    well
+                    as its simplicity <cite><a href="https://www.w3.org/Style/CSS20/history.html">(Bos,
+                            2016)</a></cite>.
+                    Some argued that a full programming language was required to style sheets.</td>
             </tr>
             <tr>
                 <td>1996</td>
                 <td>Internet Explorer becomes the first browser to support CCS, followed by Netscape <cite><a
-                    href="https://www.w3.org/Style/CSS20/history.html">(Bos, 2016)</a></cite>. CSS level 1 emerges as a W3C recommendation later that year. The release supporting styling of the following. Change options to change how they affect the page.</td>
+                            href="https://www.w3.org/Style/CSS20/history.html">(Bos, 2016)</a></cite>. CSS level 1
+                    emerges
+                    as a W3C recommendation later that year. The release supporting styling of the following. Change
+                    options
+                    to change how they affect the page.</td>
             </tr>
             <tr>
                 <td>1997</td>
-                <td>Cascading Style Sheets and Formatting Properties Working Group  formed within W3C to work on additional features.</td>
+                <td>Cascading Style Sheets and Formatting Properties Working Group formed within W3C to work on
+                    additional
+                    features.</td>
             </tr>
             <tr>
                 <td>1998</td>
@@ -109,13 +127,13 @@
             </tr>
             <tr>
                 <td>2011</td>
-                <td>CSS 3 begins to be released, with capabilities split into modules. CSS 4 follows suit and is released to build on CSS 3 modules.</td>
+                <td>CSS 3 begins to be released, with capabilities split into modules. CSS 4 follows suit and is
+                    released to
+                    build on CSS 3 modules.</td>
             </tr>
 
         </table>
-        <p>This page should discuss the purpose and motivation of CSS, highlighting the benefits of separating content
-            from style in web-applications (about 500 words). Again, it should refer to its own styling for motivating
-            examples, including using selectors and pseudo-classes.</p>
+
     </div>
 </body>
 
