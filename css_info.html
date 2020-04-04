@@ -45,7 +45,7 @@
         <h1>Cascading Style Sheets (CSS)</h1>
     </div>
 
-    <div class="purpose">
+    <div class="purpose section">
         <h2>Purpose</h2>
         <p>CSS is a method for managing a sites overall style through a separate stylesheet. CSS allows styling to be
             separated from content (written in HTML) and applied consistently across the whole website. The term
@@ -54,26 +54,38 @@
                     href="https://thehistoryoftheweb.com/look-back-history-css/">(Hoffman, 2017)</a></cite>.</p>
     </div>
 
-    <div class="description">
+    <div class="description section">
         <h2>Description</h2>
-        <p>A CSS rule set is descripbed in two parts. First, the selector such as an element (paragraph, headings),
-            class or
-            id. Second, a series of declarations that assign values to style properties such as text colours, background
-            colour, font, margins.</p>
-            <br>
-        <p>For example, we can change the font of all elements:</p>
+        <p>A CSS rule set is described in two parts. First, the selector such as an <a
+                href="html_info.html#description">element</a> (paragraph, headings),
+            class or id. Second, a series of declarations that assign values to style properties such as text colours,
+            background
+            colour, font and margins. The syntax is as follows:</p>
+        <br>
+        <div class="well">
+            <pre>selector {property1: value1; property2: value2;}</pre>
+        </div>
 
         <br>
-
+        <p>Click the buttons below to see how significantly a webpage (with the same <a href="html_info.html">HTML</a>)
+            can change by simply changing the CSS.</p>
+        <br>
         <ul id="stylelist">
             <li onclick=changeToStyle1()>Style 1</li>
             <li onclick=changeToStyle2()>Style 2</li>
             <li onclick=noCSS()>No Style</li>
         </ul>
+        <br>
+        <p>CSS also allows developers to use 'Pseudo-classes' to select the style of elements when they are in special
+            states. For example, hover your mouse over the buttons above. CSS Pseudo-classes have been used to change the color as the mouse hovers over. </p>
+        <br>
+        <div class="well">
+            <pre>selector:special-state {property1: value1;}</pre>
+        </div>
 
     </div>
 
-    <div class="history">
+    <div class="history section">
 
         <h2>History</h2>
         <table class="table">

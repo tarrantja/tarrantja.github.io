@@ -62,19 +62,20 @@ h2 {
     padding-bottom: 20px;
 }
 
+.section {
+    padding-bottom: 30px;
+}
+
 .purpose {
     background-color: darkorchid;
-    padding-bottom: 30px;
 }
 
 .description {
     background-color: limegreen;
-    padding-bottom: 30px;
 }
 
 .history {
     background-color: orangered;
-    padding-bottom: 100px;
 }
 
 .purpose p, .description p, .history table{
@@ -105,10 +106,14 @@ h2 {
     background-color: rgb(44, 161, 44);
 }
 
-p, td, cite a {
+p, td, a {
     font-family: 'Roboto', 'Arial';
     font-weight: 400;
     color:white;
+}
+
+p a, cite a, p a:visited, cite a:visited {
+    text-decoration:underline;
 }
 
 th {
@@ -122,4 +127,15 @@ th {
 
 p {
     text-align: center;
+}
+
+pre {
+    border:none;
+    margin:0;
+    padding:0;
+}
+
+.well {
+    max-width: 50%;
+    margin: auto;
 }

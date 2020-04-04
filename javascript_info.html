@@ -9,44 +9,120 @@
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <!--Bootstrap jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!--Bootstrap Javascript-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <!--My Custom StyleSheet-->
-    <link rel="stylesheet" href="mystylesheet.css">
+    <link rel="stylesheet" href="mystylesheet1.css">
 
 </head>
 
 <body>
 
     <!--Navigation Bar-->
-    <nav class="navbar navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="html_info.html">HTML</a></li>
-                    <li><a href="css_info.html">CSS</a></li>
-                    <li class="active"><a href="javascript_info.html">JavaScript</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
+    <ul class="mynavbar">
+        <li><a href="html_info.html">HTML</a></li>
+        <li><a href="css_info.html">CSS</a></li>
+        <li class="active"><a href="javascript_info.html">JavaScript</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <!--First Container-->
+    <div>
+        <h1>JavaScript (JS)</h1>
+    </div>
+
+    <div class="purpose section">
+        <h2>Purpose</h2>
+
+        <p>JavaScript was purpose built as the programming language of HTML and the Web <cite><a href="https://www.w3schools.com/js/default.asp">(W3 Schools, 2020)</a></cite>. It was born out of a vision from Netscape Communications founder Marc Andreesen to make the web more dynamic. Simple enough for non-programmers to pick-up while allowing interactions with web pages </p>
+
+        <!--<p>This page should describe the purpose and evolution of javascript in web applications (about 500 words). The website should demonstrate applications of javascript, including dynamic DOM manipulation, forms, and using AJAX to consume resources from 3rd party sites. For example, the current weather from the <a href="http://reg.bom.gov.au/fwo/IDW60901/IDW60901.94610.json">Bureau of Meteorology</a>, <a href="http://ergast.com/mrd/">F1 race results</a> or your <a href="https://cypressnorth.com/programming/how-toeasily-display-a-twitter-feed-using-javascript/">latest tweets</a>.</p>-->
+
+    </div>
+
+    <div class="description section">
+        <h2>Document Object Model (DOM)</h2>
+        <p>The browser creates a DOM when the pages is loaded. The DOM is an object model, where each element is represented as a descendent of the encolsing element, as shown in the figure to the right. JavaScript is able to dynamically access and update the content and style of the web page through the DOM.</p>
+        <div class="figure">
+            <img src="https://www.w3schools.com/js/pic_htmltree.gif" alt="Figure shoing DOM">
+            <div class="caption">
+                <p><strong>Graphical Representation of the Document Object Model<br><cite><a href="https://www.w3schools.com/js/js_htmldom.asp">(W3 Schools, 2020)</a></cite></strong></p>
             </div>
         </div>
-    </nav>
-    <!--First Container-->
-    <div class="container">
-        <h1>JavaScript (JS)</h1>
-        <p>This page should describe the purpose and evolution of javascript in web applications (about 500 words). The website should demonstrate applications of javascript, including dynamic DOM manipulation, forms, and using AJAX to consume resources from 3rd party sites. For example, the current weather from the <a href="http://reg.bom.gov.au/fwo/IDW60901/IDW60901.94610.json">Bureau of Meteorology</a>, <a href="http://ergast.com/mrd/">F1 race results</a> or your <a href="https://cypressnorth.com/programming/how-toeasily-display-a-twitter-feed-using-javascript/">latest tweets</a>.</p>
+
+        <div class="well">
+            <pre>syntax goes here</pre>
+        </div>
     </div>
+
+    <div class="history section" style="padding-bottom:300px">
+        <h2>History</h2>
+        <table class="table">
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+            </tr>
+            <tr>
+                <td>April 1995</td>
+                <td>Brenden Eich is engaged to develop <em>Mocha</em>, the initial name for <em>JavaScript</em> <cite><a href="https://books.google.com.au/books?id=Aigg5gl_CTYC">(Dahl, 2012)</a></cite>. At the same time the <em>Java</em> language, developed by <em>Sun Microsystems</em>, was beginning to gain traction <cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>. Sun partnered with <em>Netscape</em> to make <em>Mocha</em> a scripting companion for <em>Java</em>, and integrate into the <em>Netscape</em> browser. The intent was to aim <em>Java</em> at professional developers, and <em>Mocha</em> (now <em>JavaScript</em>) to amateurs and designers. 
+                </td>
+            </tr>
+            <tr>
+                <td>May 1995</td>
+                <td>There is immense internal pressure to close the deal with <em>Sun</em>. Therefore Brendan Eich creates a working prototype for <em>Mocha</em> within several weeks, and it is integrated into the <em>Netscape</em> browser <cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>. <em>Mocha</em> is renamed <em>LiveScript</em>. 
+                </td>
+            </tr>
+            <tr>
+                <td>Dec 1995</td>
+                <td>The deal between <em>Netscape</em> and <em>Sun</em> is closed, and the language is renamed <em>JavaScript</em><cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>.</td>
+            </tr>
+
+            <tr>
+                <td>Aug 1996</td>
+                <td><em>Microsoft</em> implements their own version of <em>JavaScript</em> (<em>JScript</em>) in <em>Internet Explorer 3.0</em>. Implementation of <em>JavaScript</em> is beginning to fragment <cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>.</td>
+            </tr>
+
+            <tr>
+                <td>Nov 1996</td>
+                <td>Industry association <em>ECMA</em> begins standardisation of <em>JavaScript</em> <cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>. The purpose of standardization is to better control the evolution of the language and prevent fragmentation. The language described by this standard would be called <em>ECMAScript</em>. <em>JavaScript</em> remains the commercial name for <em>ECMAScript</em>.</td>
+            </tr>
+
+            <tr>
+                <td>June 1997</td>
+                <td>The first version of <em>ECMAScript</em> is released <cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>.</td>
+            </tr>
+
+            <tr>
+                <td>June 1998</td>
+                <td>The second version of <em>ECMAScript</em> is released to resolve inconsistences between the <em>ECMA</em> and <em>ISO</em> standards <cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>. </td>
+            </tr>
+
+            <tr>
+                <td>June 1998</td>
+                <td><em>ECMAScript 3</em> is released, bringing in regular expressions, do-while blocks, exceptions and try/catch blocks, improved error handling, among other functionality <cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>.</td>
+            </tr>
+            <tr>
+                <td>June 1998</td>
+                <td><em>Asynchronous JavaScript and XML (AJAX)</em> is developed as a technique to allow pages to be updated on the fly, not only as a result of a user event <cite><a href="https://garrettsmith.net/blog/archives/2006/01/microsoft_inven_1.html">(Smith, 2006)</a></cite>.</td>
+            </tr>
+            <tr>
+                <td>2008</td>
+                <td>After 8 years <em>ECMAScript 4</em> is scrapped amongst disagreement over the direction of the language <cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>.</td>
+            </tr>
+            <tr>
+                <td>2009</td>
+                <td><em>ECMAScript 5</em> (previously known as <em>ECMAScript 3.1</em>) is signed off, becoming one of the most supported versions of <em>JavaScript</em> <cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>.</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td><em>ECMAScript 6</em> (later renamed <em>ECMAScript 2015</em>) is released, implementing some of the big features of the discarded <em>ECMAScript 4</em> <cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>.</td>
+            </tr>
+            <tr>
+                <td>2016-2018</td>
+                <td><em>ECMAScript</em> versions are released yearly and named after the year of release<cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>.</td>
+            </tr>
+
+        </table>
+    </div">
+
+
 </body>
 
 </html>
