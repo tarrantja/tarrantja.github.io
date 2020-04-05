@@ -73,14 +73,21 @@ h2 {
     padding-bottom: 0;
 }
 
-.section p, .section table{
+.section p, .section table, .well{
     width:80%;
     margin: auto;
 }
 
-.well {
-    width: 80%;
-    margin: auto;
+.myForm {
+    width:80%;
+    margin:auto;
+}
+
+.form-control {
+    max-width: 400px;
+    margin:auto;
+    padding:auto;
+    
 }
 
 #stylelist {
@@ -161,4 +168,17 @@ img {
 
 .caption p {
     text-align: center;
+}
+
+input[type="text"] {
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    padding: 6px 12px;
+}
+
+button {
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    padding: 6px 12px;
+    color:gray;
 }
