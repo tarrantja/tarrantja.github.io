@@ -78,16 +78,9 @@ h2 {
     margin: auto;
 }
 
-.myForm {
+.myForm, form {
     width:80%;
     margin:auto;
-}
-
-.form-control {
-    max-width: 400px;
-    margin:auto;
-    padding:auto;
-    
 }
 
 #stylelist {
@@ -99,21 +92,40 @@ h2 {
     margin:auto;
 }
 
+#stylelist li, .myButton, #textInput {
+    border: 2px solid darkblue;
+    background-color:white;
+    color:black;
+    border-radius:10px;
+    padding: 6px 12px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
 #stylelist li {
     width: 30%;
     float:left;
-    color:black;
-    border: 2px solid darkblue;
-    background-color:white;
     margin-left:1.66%;
     margin-right:1.66%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     text-align: center;
-    border-radius:10px;
 }
 
-#stylelist li:hover {
+.myButton, #textInput {
+    float:left;
+    margin-left:0.83%;
+    margin-right:0.83%;
+}
+
+.myButton {
+    width: 23.75%;
+}
+
+#textInput {
+    width:47.5%;
+    float:left;
+}
+
+#stylelist li:hover, .myButton:hover {
     background-color: lightblue;
     color:white;
 }
@@ -170,15 +182,11 @@ img {
     text-align: center;
 }
 
-input[type="text"] {
-    border: 1px solid gray;
-    border-radius: 0.5em;
-    padding: 6px 12px;
-}
-
-button {
-    border: 1px solid gray;
-    border-radius: 0.5em;
-    padding: 6px 12px;
-    color:gray;
+.fact {
+    color: maroon;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid maroon;
+    border-radius: 5px;
+    font-size: 1.5em;
 }
