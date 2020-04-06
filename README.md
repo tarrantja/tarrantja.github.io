@@ -17,7 +17,7 @@ This project contains the following files:
 * [myScripts.js] Used to store the JavaScript code used in javascript_info.html
 
 ### /photos/
-*[James.jpg] A photo of the author used in about.html.  
+* [James.jpg] A photo of the author used in about.html.  
 
 ## USE
 Open any one of the html files to load the website. Use the navigation pane on the left to navigate between web pages.
