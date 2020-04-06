@@ -12,6 +12,33 @@
     <!--My Custom StyleSheet-->
     <link rel="stylesheet" href="mystylesheet1.css">
 
+    <!--Google Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Font Aswesome Icons-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <style>
+        #info {
+            padding:0;
+        }
+        #info li {
+            display: inline;
+            padding: 10px;
+        }
+
+        img {
+            display: block;
+            max-width: 200px;
+            margin: auto;
+        }
+
+        .icon {
+            vertical-align: middle;
+            padding-right: 5px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -26,12 +53,85 @@
 
     <!--First Container-->
     <div>
-        <h1>About the Author</h1>
+        <h1 style="text-align: center;">James Tarrant</h1>
     </div>
 
-    <div class="section" style="padding-bottom:600px">
-        <h2>What To Do</h2>
-        <p>This page should give a brief biography of the author, including a picture, and a CV.</p>
+    <div class="section">
+        <ul id="info" style="text-align:center;">
+            <li><i class="material-icons icon">&#xe325;</i><span>0409 710 493</span></li>
+            <li><i class="material-icons icon">&#xe0be;</i>tarrantja@gmail.com</li>
+            <li><i style="font-size:24px" class="fab icon">&#xf08c;</i><a
+                    href="https://www.linkedin.com/in/james-tarrant-b05638137/">james-tarrant</a></li>
+        </ul>
+        <img src="photos/James.jpg" alt="Photo of James" class="figure">
+        <h2>Bio</h2>
+        <p>James developed a passion for Computer Science during his Master of Professional Engineering, and has chosen to continue developing his skills in a Diploma of Data Science. This website has been created to support this study. </p>
+    </div>
+
+
+    <div class="section">
+        <h2>Education</h2>
+        <div class="row CVEntry">
+            <div class="col-sm-2 dates">
+                <p>2016-Present</p>
+            </div>
+            <div class="col-sm-10">
+                <p>Diploma of Data Science <em>(University of Western Australia)</em></p>
+                <p>A have completed the diploma od data scienc eitn bal bal</p>
+            </div>
+        </div>
+        <div class="row CVEntry">
+            <div class="col-sm-2 dates">
+                <p>2014-2015</p>
+            </div>
+            <div class="col-sm-10">
+                <p>Masters of Professional Engineering <em>(University of Western Australia)</em></p>
+                <p>Mayjored in Electronic and Electrical Engineering, graduating with Distinction (WAM: 84/100, GPA:
+                    6.8).</p>
+            </div>
+        </div>
+        <div class="row CVEntry">
+            <div class="col-sm-2 dates">
+                <p>2011-2013</p>
+            </div>
+            <div class="col-sm-10">
+                <p>Bachelor of Commerce <em>(University of Western Australia)</em></p>
+                <p>Majoring in Economics (WAM: 93/100, GPA: 7).</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        <div class="row CVEntry">
+            <div class="col-sm-2 dates">
+                <p>2016-Present</p>
+            </div>
+            <div class="col-sm-10">
+                <p>Electrical Engineer <em>(Woodside Energy Ltd)</em></p>
+                <p>At Woodside, James has been a member of Frontline, Maintenance and Project Engineering teams. As a
+                    Frontline Engineer James was responsible for responding to, troubleshooting, and providing
+                    Engineering input on breakdowns and emergent risks in order to return equipment to a safe and
+                    reliable state. As a Maintenance Engineer James was jointly responsible for the plant Electrical
+                    Distribution System. In particular, assessing and reporting on key risks and vulnerabilities within
+                    the system, and prioritising risk remedaition and maintenance activities within schedule, OPEX and
+                    CAPEX contraints. In his current role as an Engineer working on Brownfield Projects, James is
+                    resposible for assurance and verification of Contractor deliverables, managing (often conflicting)
+                    expectations between the project team and final customer, and providing technical input on project
+                    risks.</p>
+            </div>
+        </div>
+        <div class="row CVEntry">
+            <div class="col-sm-2 dates">
+                <p>2014-2015</p>
+            </div>
+            <div class="col-sm-10">
+                <p>Tutor/Facilitator <em>(University of Western Australia)</em></p>
+                <p>Facilitated workshops and assisted students with a major group project. This included the practical
+                    aspects of design, prototyping, construction and testing as explaining the underlying thepretical
+                    aspects.</p>
+            </div>
+        </div>
     </div>
 
 </body>

@@ -19,7 +19,7 @@ h1, .section {
     float:right;
 }
 
-li a {
+.mynavbar li a {
     display:block;
     color:white;
     text-align: center;
@@ -29,12 +29,12 @@ li a {
 
 
 
-li a:hover {
+.mynavbar li a:hover {
     text-decoration:none;
     background-color: lightblue; 
 }
 
-.active {
+.mynavbar .active {
     background-color: darkblue; 
 
 }
@@ -76,6 +76,29 @@ h2 {
 .section p, .section table, .well{
     width:80%;
     margin: auto;
+}
+
+.CVEntry {
+    width:90%;
+    margin:auto;
+    margin-bottom: 10px;
+}
+
+.CVEntry p {
+    width:100%;
+    margin:0;
+}
+
+.CVEntry em {
+    color:darkgray;
+}
+
+.CVEntry p:first-child {
+    font-weight: 700;
+}
+
+.dates p {
+    text-align: right;
 }
 
 .myForm, form {

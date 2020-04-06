@@ -29,7 +29,7 @@ function reset() {
 
 document.getElementById("numberForm").addEventListener("submit", function() {
     event.preventDefault();
-    var type, number, url, factDiv;
+    let type, number, url, factDiv;
     factDiv = document.getElementById("fact");
     factDiv.innerHTML="<p class='fact'>Please wait...</p>";
     type=document.getElementById("type").value;
