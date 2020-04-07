@@ -17,35 +17,6 @@
 
     <!--Load custom JavaScript file-->
     <script async defer src="myScripts.js"></script>
-    
-    <script>
-        let elNumber = document.getElementById("numberForm");
-if (elNumber != null) {
-    elNumber.addEventListener("submit", function () { //Wait for user to submit form
-        event.preventDefault();
-        let type, number, url, factDiv;
-        factDiv = document.getElementById("fact"); //The section of the webpage where we will display the fact
-        factDiv.innerHTML = "<p class='fact'>Please wait...</p>";
-        type = document.getElementById("type").value;
-        number = document.getElementById("number").value;
-        if (number == "") {
-            number = "random";
-        }
-        url = "http://numbersapi.com/" + number + "/" + type + "?json"; //Creates a custom url with number and fact type
-        fetch(url) // Makes the request
-            .then((resp) => resp.json()) //Read as JSON formatted data
-            .then(function (data) {
-                console.log(data);
-                let text = data.text;
-                factDiv.innerHTML = "<p class='fact'>" + text + "</p>"; //Display on webpage
-            })
-            .catch(function (error) { // Catch any error and display a useful message
-                console.log(error);
-                factDiv.innerHTML = "<p class='fact'>There was an error... please try again ¯\\_(ツ)_/¯ </p>";
-            });
-    });
-}
-    </script>
 
     <!--Page specific styling-->
     <style>
