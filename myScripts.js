@@ -1,6 +1,6 @@
 //DOM Example
 
-function myFunction() {
+function changeHeading1() {
     var h1, newHeading;
     newHeading = document.getElementById("textInput").value;
     if (newHeading.trim() == "") {
@@ -12,15 +12,17 @@ function myFunction() {
     }
 }
 
+//This code segment is an event listener, waiting for 
+
 document.getElementById("textInput").addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
         event.preventDefault();
-        myFunction();
+        changeHeading1();
     }
 });
 
 function reset() {
-    h1 = document.getElementsByTagName("h1")[0]
+    h1 = document.getElementsByTagName("h1")[0];
     h1.innerHTML = "JavaScript (JS)";
     h1.scrollIntoView();
 }

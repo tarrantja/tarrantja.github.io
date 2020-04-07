@@ -73,7 +73,7 @@ h2 {
     padding-bottom: 0;
 }
 
-.section p, .section table, .well{
+.section p, .section table, .section ol, .well{
     width:80%;
     margin: auto;
 }
@@ -212,4 +212,9 @@ img {
     border: 2px solid maroon;
     border-radius: 5px;
     font-size: 1.5em;
+}
+
+.icon {
+    vertical-align: middle;
+    padding-right: 5px;
 }

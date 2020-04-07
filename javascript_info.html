@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>Javascript (JS)</title>
+    <title>Javascript</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,6 +14,14 @@
 
     <!--Load custom JavaScript file-->
     <script async defer src="myScripts.js"></script>
+
+    <!--Page specific styling-->
+    <style>
+        li pre {
+            display:inline-block;
+            vertical-align: middle;
+        }
+    </style>
 
 </head>
 
@@ -39,8 +47,6 @@
             vision from Netscape Communications founder Marc Andreesen to make the web more dynamic. Simple enough for
             non-programmers to pick-up while allowing interactions with the web page's Document Object Model.</p>
 
-        <!--<p>This page should describe the purpose and evolution of javascript in web applications (about 500 words). The website should demonstrate applications of javascript, including dynamic DOM manipulation, forms, and using AJAX to consume resources from 3rd party sites. For example, the current weather from the <a href="http://reg.bom.gov.au/fwo/IDW60901/IDW60901.94610.json">Bureau of Meteorology</a>, <a href="http://ergast.com/mrd/">F1 race results</a> or your <a href="https://cypressnorth.com/programming/how-toeasily-display-a-twitter-feed-using-javascript/">latest tweets</a>.</p>-->
-
     </div>
 
     <div class="section">
@@ -61,7 +67,7 @@
             dynamically updates the first h1 of the webpage. Try it below.</p>
         <br>
         <div class="well">
-            <pre>function myFunction() {
+            <pre>function changeHeading1() {
     var h1, newHeading;
     newHeading = document.getElementById("textInput").value; 
     h1 = document.getElementsByTagName("h1");
@@ -72,8 +78,8 @@
 
         <div class="myForm">
             <input id="textInput" type="text" placeholder="Enter new heading" required>
-            <button type="button" onclick="myFunction()" class="myButton">Update</button>
-            <button tyle="button" onclick="reset()" class="myButton">Reset</button>
+            <button type="button" onclick="changeHeading1()" class="myButton">Update</button>
+            <button type="button" onclick="reset()" class="myButton">Reset</button>
         </div>
 
     </div>
@@ -84,8 +90,21 @@
             sending data, all after a page has loaded <cite><a
                 href="https://www.w3schools.com/js/default.asp">(W3 Schools, 2020)</a></cite>. For example, when a number is entered into the form below
             JavaScript uses AJAX to request a fact about that number from <em><a href="www.numbersapi.com">www.numbersapi.com</a></em> and dynamically
-            display it on the page. </p>
+            display it on the page. The process is as follows:</p>
+
         <br>
+        <ol>
+            <li><pre><span>.addEventListener</span></pre>  waits for the user to submit the form.</li>
+            <li><pre><span>.getElementById</span></pre>  is used to obtains the form values.</li>
+            <li>Concatenation is used to create a custom url with the requested <em>number</em> and <em>type</em></li>
+            <li><pre><span>fetch</span></pre>  is used to make the request for the external data. While the data is being requested the user can continue to interact with the webpage.</li>
+            <li>Once the data is recieved, <pre><span>.then</span></pre> is used to read the data in JSON format</li>
+            <li>JavaScript uses the DOM, described above, to access and dynamically update the webpage with the recieved fact.</li>
+
+
+        </ol>
+        <br>
+
         <form class="form-horizontal" id="numberForm">
                 <div class="form-group">
                 <label for="type" class="control-label col-sm-3">Choose an option:</label>
@@ -112,6 +131,8 @@
         </form>
         <br>
         <div id="fact"></div>
+
+
 
     </div>
 
