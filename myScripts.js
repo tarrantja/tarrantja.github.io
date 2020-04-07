@@ -123,7 +123,6 @@ if (elNumber != null) {
             .catch(function (error) { // Catch any error and display a useful message
                 console.log(error);
                 factDiv.innerHTML = "<p class='fact'>Sorry there was an error... please try again ¯\\_(ツ)_/¯ </p>";
-            alert(url);
             });
     });
 }
