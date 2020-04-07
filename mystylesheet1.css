@@ -1,10 +1,11 @@
+/* The main external style sheet for the website. */
+/* More info: https://github.com/tarrantja/Project-1 */
+
+/* Custom font 'Arvo' from Google*/
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 
-body {
-    background-color: lightskyblue;
-}
-
- .mynavbar {
+/* Navigation Bar */
+.mynavbar {
     width:15%;
     float:left;
     list-style-type: none;
@@ -14,11 +15,6 @@ body {
     position:fixed;
 }
 
-h1, .section {
-    width:85%;
-    float:right;
-}
-
 .mynavbar li a {
     display:block;
     color:white;
@@ -26,8 +22,6 @@ h1, .section {
     padding: 20px;
     text-decoration:none;
 }
-
-
 
 .mynavbar li a:hover {
     text-decoration:none;
@@ -39,9 +33,20 @@ h1, .section {
 
 }
 
+/* Body and main elements (headings, para, etc) */
+
+body {
+    background-color: lightskyblue;
+}
+
 h1, h2, h3, p {
     margin: 0;
     padding: 0;
+}
+
+h1, .section {
+    width:85%;
+    float:right;
 }
 
 h1, h2, h3 {
@@ -73,10 +78,28 @@ h2 {
     padding-bottom: 0;
 }
 
-.section p, .section table, .section ol, .well{
+.section p, .section table, .section ol, .well{ 
     width:80%;
     margin: auto;
 }
+
+p, td, cite a, li {
+    font-family: 'Arvo', 'Arial';
+    font-weight: 400;
+    color:black;
+}
+
+p, td {
+    text-align: justify;
+}
+
+pre {
+    border:none;
+    margin:0;
+    padding:0;
+}
+
+/* Styling the CV in about.html */
 
 .CVEntry {
     width:90%;
@@ -101,10 +124,14 @@ h2 {
     text-align: right;
 }
 
+/* Form styling in javascript_info.html */
+
 .myForm, form {
     width:80%;
     margin:auto;
 }
+
+/* Styling buttons in css_info.html */
 
 #stylelist {
     list-style-type: none;
@@ -153,11 +180,7 @@ h2 {
     color:white;
 }
 
-p, td, cite a, li {
-    font-family: 'Arvo', 'Arial';
-    font-weight: 400;
-    color:black;
-}
+/* Styling the table in the 'Hisotry' sections */
 
 th {
     text-align: center;
@@ -167,16 +190,7 @@ th {
     color: black;
 }
 
-
-p, td {
-    text-align: justify;
-}
-
-pre {
-    border:none;
-    margin:0;
-    padding:0;
-}
+/* DOM Object Model Figure */
 
 img {
     max-width: 100%;
@@ -204,6 +218,8 @@ img {
 .caption p {
     text-align: center;
 }
+
+/* Styling of fact retrived from numbersapi.com in javascript_info.html */
 
 .fact {
     color: maroon;

@@ -1,3 +1,6 @@
+<!--This webpage explains the purpose and history of css, describes how to change the style of a webpage, and how significantly a webpage can change through only changing a css file.-->
+<!--More info: https://github.com/tarrantja/Project-1 -->
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -9,25 +12,11 @@
     <!--Bootstrap CSS-->
     <link id="bootStrap" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <!--My Custom StyleSheet-->
+    <!--External StyleSheet-->
     <link id="style" rel="stylesheet" href="mystylesheet1.css">
 
-    <script>
-        function changeToStyle1() {
-            document.getElementById("style").href = "mystylesheet1.css";
-            document.getElementById("bootStrap").href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css";
-        }
-
-        function changeToStyle2() {
-            document.getElementById("style").href = "mystylesheet2.css";
-            document.getElementById("bootStrap").href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css";
-        }
-
-        function noCSS() {
-            document.getElementById("style").href = "";
-            document.getElementById("bootStrap").href = "";
-        }
-    </script>
+    <!--Load custom JavaScript file-->
+    <script async defer src="myScripts.js"></script>
 
 </head>
 
@@ -40,24 +29,27 @@
         <li><a href="javascript_info.html">JavaScript</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
-    <!--First Container-->
+
+    <!--Main heading-->
     <div>
         <h1>Cascading Style Sheets (CSS)</h1>
     </div>
 
+    <!--The purpopse of CSS-->
     <div class="purpose section">
         <h2>Purpose</h2>
-        <p>CSS is a method for managing a sites overall style through a separate stylesheet. CSS allows styling to be
+        <p>CSS is a method for managing a site's overall style through a separate stylesheet. CSS allows styling to be
             separated from content (written in HTML) and applied consistently across the whole website. The term
             cascading comes from the ability to combine multiple CSS files to determine the style for one page. This
             means that styles can inherit and overwrite previously declared styles <cite><a
                     href="https://thehistoryoftheweb.com/look-back-history-css/">(Hoffman, 2017)</a></cite>.</p>
     </div>
 
+    <!--How to use CSS, and demonstration of how it can change a webpage-->
     <div class="description section">
         <h2>Description</h2>
         <p>A CSS rule set is described in two parts. First, the selector such as an <a
-                href="html_info.html#description">element</a> (paragraph, headings),
+                href="html_info.html#description">element</a> (paragraph, headings, etc),
             class or id. Second, a series of declarations that assign values to style properties such as text colours,
             background
             colour, font and margins. The syntax is as follows:</p>
@@ -77,7 +69,8 @@
         </ul>
         <br>
         <p>CSS also allows developers to use 'Pseudo-classes' to select the style of elements when they are in special
-            states. For example, hover your mouse over the buttons above. CSS Pseudo-classes have been used to change the color as the mouse hovers over. </p>
+            states. For example, hover your mouse over the buttons above. CSS Pseudo-classes have been used to change
+            the color as the mouse hovers over. </p>
         <br>
         <div class="well">
             <pre>selector:special-state {property1: value1;}</pre>
@@ -85,7 +78,8 @@
 
     </div>
 
-    <div class="history section">
+    <!--The history and evolution of CSS-->
+    <div class="history section"  style="padding-bottom:100px">
 
         <h2>History</h2>
         <table class="table">
@@ -103,13 +97,13 @@
                     useful
                     basis for discussion. CSS was distinguished from other styling alternatives by accounting for the
                     design
-                    requirements of both author and user, acknowledging a they would need to be ‘cascaded’ in some way.
+                    requirements of both author and user, acknowledging they would need to be ‘cascaded’ in some way.
                 </td>
             </tr>
 
             <tr>
                 <td>1995</td>
-                <td>the www-style mailing list is created. This would greatly shape the direction of CSS <cite><a
+                <td>The www-style mailing list is created. This would greatly shape the direction of CSS <cite><a
                             href="https://www.css-class.com/a-brief-history-of-css/">(CSS Class, 2016)</a></cite>.
                     Debate
                     over the adoption of CSS focussed on the novel idea of balancing author and user requirements, as
@@ -123,19 +117,17 @@
                 <td>Internet Explorer becomes the first browser to support CCS, followed by Netscape <cite><a
                             href="https://www.w3.org/Style/CSS20/history.html">(Bos, 2016)</a></cite>. CSS level 1
                     emerges
-                    as a W3C recommendation later that year. The release supporting styling of the following. Change
-                    options
-                    to change how they affect the page.</td>
+                    as a W3C recommendation later that year.</td>
             </tr>
             <tr>
                 <td>1997</td>
-                <td>Cascading Style Sheets and Formatting Properties Working Group formed within W3C to work on
+                <td>Cascading Style Sheets and Formatting Properties Working Group forms within W3C to work on
                     additional
                     features.</td>
             </tr>
             <tr>
                 <td>1998</td>
-                <td>CSS level 2 becomes the W3C recommendation, adding functionality for the following:</td>
+                <td>CSS level 2 becomes the W3C recommendation.</td>
             </tr>
             <tr>
                 <td>2011</td>

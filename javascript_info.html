@@ -1,15 +1,18 @@
+<!--This webpage describe the purpose and history of JavaScript, and demonstrates use of the DOM, AJAX and forms-->
+<!--More info: https://github.com/tarrantja/Project-1 -->
+
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
-    <title>Javascript</title>
+    <title>JavaScript</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <!--My Custom StyleSheet-->
+    <!--External StyleSheet-->
     <link rel="stylesheet" href="mystylesheet1.css">
 
     <!--Load custom JavaScript file-->
@@ -18,7 +21,7 @@
     <!--Page specific styling-->
     <style>
         li pre {
-            display:inline-block;
+            display: inline-block;
             vertical-align: middle;
         }
     </style>
@@ -34,11 +37,13 @@
         <li class="active"><a href="javascript_info.html">JavaScript</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
-    <!--First Container-->
+
+    <!--Page Heading-->
     <div>
         <h1>JavaScript (JS)</h1>
     </div>
 
+    <!--The purpose of JS-->
     <div class="section">
         <h2>Purpose</h2>
 
@@ -49,10 +54,11 @@
 
     </div>
 
+    <!--Explaining the Document Object Model-->
     <div class="section">
         <h2>Document Object Model (DOM)</h2>
         <p>The browser creates a DOM when the pages is loaded. The DOM is an object model, where each element is
-            represented as a descendent of the encolsing element, as shown in the figure to the right. JavaScript is
+            represented as a descendent of the encolsing element, as shown in the figure below. JavaScript is
             able to dynamically access and update the content and style of the web page through the DOM.</p>
         <div class="figure">
             <img src="https://www.w3schools.com/js/pic_htmltree.gif" alt="Figure shoing DOM">
@@ -67,6 +73,7 @@
             dynamically updates the first h1 of the webpage. Try it below.</p>
         <br>
         <div class="well">
+            <!--Code segment showing how to access the DOM-->
             <pre>function changeHeading1() {
     var h1, newHeading;
     newHeading = document.getElementById("textInput").value; 
@@ -84,29 +91,37 @@
 
     </div>
 
+    <!--Explaining and demonstrating the use of AJAX and forms-->
     <div class="section">
         <h2>AJAX</h2>
         <p>Asynchronous JavaScript And XML (AJAX) is a method for updating a webpage, requesting & recieving data, and
-            sending data, all after a page has loaded <cite><a
-                href="https://www.w3schools.com/js/default.asp">(W3 Schools, 2020)</a></cite>. For example, when a number is entered into the form below
-            JavaScript uses AJAX to request a fact about that number from <em><a href="www.numbersapi.com">www.numbersapi.com</a></em> and dynamically
+            sending data, all after a page has loaded <cite><a href="https://www.w3schools.com/js/default.asp">(W3
+                    Schools, 2020)</a></cite>. For example, when a number is submitted using the form below,
+            JavaScript uses AJAX to request a fact about that number from <em><a
+                    href="www.numbersapi.com">www.numbersapi.com</a></em> and dynamically
             display it on the page. The process is as follows:</p>
 
         <br>
         <ol>
-            <li><pre><span>.addEventListener</span></pre>  waits for the user to submit the form.</li>
-            <li><pre><span>.getElementById</span></pre>  is used to obtains the form values.</li>
+            <li>
+                <pre><span>.addEventListener</span></pre> waits for the user to submit the form.</li>
+            <li>
+                <pre><span>.getElementById</span></pre> is used to obtain the form values.</li>
             <li>Concatenation is used to create a custom url with the requested <em>number</em> and <em>type</em></li>
-            <li><pre><span>fetch</span></pre>  is used to make the request for the external data. While the data is being requested the user can continue to interact with the webpage.</li>
-            <li>Once the data is recieved, <pre><span>.then</span></pre> is used to read the data in JSON format</li>
-            <li>JavaScript uses the DOM, described above, to access and dynamically update the webpage with the recieved fact.</li>
+            <li>
+                <pre><span>fetch</span></pre> is used to make the request for the external data. While the data is being
+                requested the user can continue to interact with the webpage.</li>
+            <li>Once the data is recieved, it is read in a JSON format</li>
+            <li>JavaScript uses the DOM, described above, to access and dynamically update the webpage with the recieved
+                fact.</li>
 
 
         </ol>
         <br>
 
+        <!--Form to get number and fact type from the user-->
         <form class="form-horizontal" id="numberForm">
-                <div class="form-group">
+            <div class="form-group">
                 <label for="type" class="control-label col-sm-3">Choose an option:</label>
                 <div class="col-sm-9">
                     <select id="type" name="type" class="form-control">
@@ -130,13 +145,11 @@
             </div>
         </form>
         <br>
-        <div id="fact"></div>
-
-
-
+        <div id="fact"></div> <!--The div where we will store the fact when retrieved-->
     </div>
 
-    <div class="section">
+    <!--The history and evolution of JavaScript-->
+    <div class="section"  style="padding-bottom:100px">
         <h2>History</h2>
         <table class="table">
             <tr>
@@ -149,8 +162,8 @@
                             href="https://books.google.com.au/books?id=Aigg5gl_CTYC">(Dahl, 2012)</a></cite>. At the
                     same time the <em>Java</em> language, developed by <em>Sun Microsystems</em>, was beginning to gain
                     traction <cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott,
-                            2017)</a></cite>. Sun partnered with <em>Netscape</em> to make <em>Mocha</em> a scripting
-                    companion for <em>Java</em>, and integrate into the <em>Netscape</em> browser. The intent was to aim
+                            2017)</a></cite>. Sun partners with <em>Netscape</em> to make <em>Mocha</em> a scripting
+                    companion for <em>Java</em>, and integrate into the <em>Netscape</em> browser. The intent is to aim
                     <em>Java</em> at professional developers, and <em>Mocha</em> (now <em>JavaScript</em>) to amateurs
                     and designers.
                 </td>
@@ -167,7 +180,7 @@
             <tr>
                 <td>Dec 1995</td>
                 <td>The deal between <em>Netscape</em> and <em>Sun</em> is closed, and the language is renamed
-                    <em>JavaScript</em><cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott,
+                    <em>JavaScript</em> <cite><a href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott,
                             2017)</a></cite>.</td>
             </tr>
 
@@ -239,7 +252,7 @@
             </tr>
             <tr>
                 <td>2016-2018</td>
-                <td><em>ECMAScript</em> versions are released yearly and named after the year of release<cite><a
+                <td>From now on <em>ECMAScript</em> versions are released yearly and named after the year of release <cite><a
                             href="https://auth0.com/blog/a-brief-history-of-javascript/">(Peyrott, 2017)</a></cite>.
                 </td>
             </tr>
