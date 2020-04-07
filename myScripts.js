@@ -1,7 +1,7 @@
 //This document holds the JavaScript used in the following webpages:
 //More info: https://github.com/tarrantja/Project-1
 
-//These functions are used to highligh certain elements on the html_info.html page
+//These functions are used to highligh certain elements on the index.html page
 
 function hightlightList() { //Highlight unordered lists
     var x = document.getElementsByTagName("ul");
