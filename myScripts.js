@@ -112,7 +112,7 @@ if (elNumber != null) {
         if (number == "") {
             number = "random";
         }
-        url = "http://www.numbersapi.com/" + number + "/" + type + "?json"; //Creates a custom url with number and fact type
+        url = "https://www.numbersapi.com/" + number + "/" + type + "?json"; //Creates a custom url with number and fact type
         fetch(url) // Makes the request
             .then((resp) => resp.json()) //Read as JSON formatted data
             .then(function (data) {
